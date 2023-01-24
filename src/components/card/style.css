@@ -1,0 +1,32 @@
+.card-wrapper {
+    border: 1px solid grey;
+    box-shadow: 2px solid;
+}
+
+.img-wrapper {
+    height: 150px;
+    width: 80px;
+}
+
+.content-wrapper {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+
+p {
+    display: inline;
+    font-size: 14px;
+   
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10;
+    padding: 10px;
+    margin: 10px;
+}
+
