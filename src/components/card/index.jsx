@@ -3,7 +3,7 @@ import "./style.css";
 
 const Card = (props) => {
   const backgroundImage = {
-    backgroundImage: `url(http://m.gettywallpapers.com/wp-content/uploads/2021/03/Cool-HD-Wallpaper.jpg)`,
+    backgroundImage: `url(${props.post.postUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "70vh",

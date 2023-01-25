@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../card";
+import posts from "../../mock/posts.json"
 
 const Posts = () => {
   const [postsList, setPostsList] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => {
-        setPostsList(res.data);
-        console.log("res", res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .get("posts")
+    //   .then((res) => {
+    //     debugger
+    //     setPostsList(res.data);
+    //     console.log("res", res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+    setPostsList(posts);
   }, []);
 
   return (
