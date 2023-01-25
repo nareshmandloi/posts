@@ -1,8 +1,7 @@
 import './App.css';
 import HeartIcon from './components/heart-icon/'
-// import { BrowserRouter } from 'react-router-dom';
-// import Routes from './routes';
-import Welcone from './components/welcome'
+import {Route, Routes } from 'react-router-dom';
+import Welcome from './components/welcome'
 import Posts from './components/posts'
 
 
@@ -19,12 +18,11 @@ function App() {
     <div className="App" style={styles.app}>
       <div>
         <HeartIcon />
+        <Routes>
+          <Route path='/' element={ <Welcome />}/>
+          <Route path='/posts' element={ <Posts />}/>
+        </Routes>
       </div>
-      <Welcone /> 
-      {/* <Posts /> */}
-      {/* <BrowserRouter>
-      <Routes /> 
-      </BrowserRouter> */}
     </div>
   );
 }

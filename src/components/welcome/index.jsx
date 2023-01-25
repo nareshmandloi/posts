@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./style.css"
 
 const Welcome = () => {
@@ -7,7 +8,7 @@ const Welcome = () => {
      <h1 className='title'>Welcome !</h1>
      <br />
      <br />
-     <button className='post-btn'>Posts</button>
+    <Link to="/posts"> <button className='post-btn'>Posts</button></Link>
     </div>
   )
 }
