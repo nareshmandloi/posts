@@ -1,33 +1,26 @@
-import { color } from '@mui/system';
-import React from 'react'
-import { FaHeart } from 'react-icons/fa';
+import React from "react";
+import { FaHeart } from "react-icons/fa";
 
-
-const HeartIcon = () => {
+const HeartIcon = (props) => {
+  console.log(props);
 
   const styles = {
     icon: {
-      position: 'absolute',
-      right: '25px',
-      top: '25px',
-      fontSize: '25px',
-      color: 'red',
+      position: "absolute",
+      right: "25px",
+      top: "25px",
+      fontSize: "25px",
+      color: `${props.color}`,
+      cursor: "pointer",
     },
-    count: {
-      margin: '0',
-      fontSize: '14px',
-      marginLeft: '5px',
-      color: "white"
-    }
-  }
+  };
 
   return (
     <div style={styles.icon}>
-        <FaHeart />
-        <br />
-<p style={styles.count}> 10</p>
+      <FaHeart onClick={props.onClick} />
+      <br />
     </div>
-  )
-}
+  );
+};
 
-export default HeartIcon
+export default HeartIcon;

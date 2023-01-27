@@ -1,6 +1,7 @@
 .card-wrapper {
     border: 1px solid grey;
     box-shadow: 2px solid;
+    position: relative  ;
 }
 
 .img-wrapper {
