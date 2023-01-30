@@ -2,12 +2,11 @@ import React from "react";
 import { FaHeart } from "react-icons/fa";
 
 const HeartIcon = (props) => {
-  console.log(props);
 
   const styles = {
     icon: {
       position: "absolute",
-      right: "25px",
+      right: `${props.right}`,
       top: "25px",
       fontSize: "25px",
       color: `${props.color}`,
